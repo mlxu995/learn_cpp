@@ -1,14 +1,16 @@
 {
+    "files.autoSave": "onFocusChange", //鼠标离开时自动保存
+    "editor.formatOnSave": true, // 保存时自动格式化
     "files.trimTrailingWhitespace": true, // 保存文件时删除行尾空格
     "files.insertFinalNewline": true, // 文件最后自动加上空行
     "files.eol": "\n", // 换行符设为linux格式的\n
-    "editor.formatOnSave": true, // 保存时自动格式化
     "C_Cpp.formatting": "clangFormat", // 格式化工具使用clang-format
     "C_Cpp.clang_format_fallbackStyle": "Google",
-    "C_Cpp.clang_format_path": "/home/codespace/.python/current/bin/clang-format",
+    // clang-format在wsl或开发机中的路径
+    // "C_Cpp.clang_format_path": "/home/codespace/.python/current/bin/clang-format",
     "files.associations": {
         "iostream": "cpp"
-    }, // clang-format在wsl或开发机中的路径
+    },
     "C_Cpp.codeAnalysis.clangTidy.enabled": true,
     "C_Cpp.codeAnalysis.clangTidy.checks.enabled": [
         "bugprone-standalone-empty"
